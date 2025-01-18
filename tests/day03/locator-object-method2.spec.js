@@ -6,7 +6,7 @@ test.describe('Test Group', () => {
         await page.goto("https://practice.cydeo.com/");
     });
 
-  test("innerText(): retrieves the visible text @testInnerText", async ({ page }) => {
+  test("innerText(): retrieves the visible text @testInnerText @smoke", async ({ page }) => {
     let headerElement = page.locator("//h1/span[@class='h1y']");
     
     let actualText = await headerElement.innerText();

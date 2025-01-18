@@ -12,7 +12,7 @@ test.describe('Test Group', () => {
         elements = await page.locator("//ul[@class='list-group']/li/a").all();
     });
 
-  test('Verify that there are exactly 50 link elements within the <ul> tag', async ({ page }) => {
+  test('Verify that there are exactly 50 link elements within the <ul> tag @smoke', async ({ page }) => {
     expect(elements.length).toBe(50); // verifies that there are 50 elements
 
     expect(elements.length).toBeGreaterThanOrEqual(20);

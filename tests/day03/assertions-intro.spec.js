@@ -11,7 +11,7 @@ test.describe('Test Group', () => {
 
     });
 
-  test("Verify checkboxes are checked", async ({ page }) => {
+  test("Verify checkboxes are checked @smoke", async ({ page }) => {
     await page.getByText("Checkboxes").click();
 
     let firstCheckBox = page.locator("input#box1");
@@ -29,7 +29,7 @@ test.describe('Test Group', () => {
 
   });
 
-  test('Verify checkboxes are unchecked', async ({ page }) => {
+  test('Verify checkboxes are unchecked @smoke', async ({ page }) => {
     await page.getByText("Checkboxes").click();
 
     let firstCheckBox = page.locator("input#box1");

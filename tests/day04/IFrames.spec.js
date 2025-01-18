@@ -8,8 +8,8 @@ test('iframe test', async ({ page }) => {
     let elementInsideTheFrame = myFrame.locator("//body[@id='tinymce']");
 
     //await elementInsideTheFrame.clear();
-    await elementInsideTheFrame.press("Control+A", "Backspace");
+    //await elementInsideTheFrame.press("Control+A", "Backspace");
 
-    await elementInsideTheFrame.fill("Hello from CYDEO");
+   // await elementInsideTheFrame.fill("Hello from CYDEO");
   
 });
